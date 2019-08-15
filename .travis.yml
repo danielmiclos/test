@@ -1,0 +1,7 @@
+sudo: required
+services:
+  - docker
+
+script:
+  - docker build -t danielmiclos/node .
+  - docker images danielmiclos/node
